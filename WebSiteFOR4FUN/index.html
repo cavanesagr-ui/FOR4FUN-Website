@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FOR4FUN — Pure Chaotic Energy</title>
+  <meta name="description" content="FOR4FUN — a completely community-driven memecoin on Solana. No team wallets. No corporate backing. Just fun." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__content">
+      <img
+        class="hero__mascot"
+        src="assets/mascot.png"
+        alt="FOR4FUN frog mascot with sunglasses"
+        width="640"
+        height="640"
+      />
+      <h1 class="hero__brand">FOR4FUN</h1>
+      <p class="hero__tagline">Pure chaotic energy. Community-driven. No whales allowed.</p>
+      <div class="hero__ctas">
+        <a class="btn btn--buy" href="#" id="buy-link" target="_blank" rel="noopener noreferrer">BUY FOR4FUN</a>
+        <a class="btn btn--tg" href="https://t.me/+8u_Zr0dhm3U5OTRh" id="telegram-link" target="_blank" rel="noopener noreferrer">JOIN TELEGRAM</a>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <span></span>
+    </div>
+  </header>
+
+  <main>
+    <section class="section about" id="about">
+      <div class="container">
+        <p class="section__eyebrow">The story</p>
+        <h2 class="section__title">Why FOR4FUN exists</h2>
+        <p class="about__text">
+          I'm sick and tired of corporate whales and Wall Street scumbags controlling the entire crypto market.
+          They think retail investors and teenagers are just exit liquidity for their pump-and-dump schemes.
+          I launched <strong>FOR4FUN</strong> using my own pocket money to prove that a completely community-driven token
+          can crush their million-dollar insider syndicates. No team wallets, no hidden allocations, no corporate backing.
+          Just pure chaotic energy and regular internet people united <strong>FOR FUN</strong>.
+        </p>
+      </div>
+    </section>
+
+    <section class="section how" id="how">
+      <div class="container">
+        <p class="section__eyebrow">For beginners</p>
+        <h2 class="section__title">How to buy in 3 steps</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num">1</span>
+            <div class="step__body">
+              <h3>Download Phantom</h3>
+              <p>Get the Phantom wallet app or browser extension — your Solana home base.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">2</span>
+            <div class="step__body">
+              <h3>Top up SOL</h3>
+              <p>Buy or transfer Solana (SOL) into your Phantom wallet to cover the swap and fees.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">3</span>
+            <div class="step__body">
+              <h3>Swap for FOR4FUN</h3>
+              <p>Hit <a href="#" id="buy-link-inline" target="_blank" rel="noopener noreferrer">BUY FOR4FUN</a>, connect Phantom, and exchange SOL for the real token.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section tokenomics" id="tokenomics">
+      <div class="container">
+        <p class="section__eyebrow">On-chain truth</p>
+        <h2 class="section__title">Tokenomics</h2>
+        <div class="tokenomics__grid">
+          <div class="chart-wrap" aria-hidden="true">
+            <svg class="donut" viewBox="0 0 200 200" role="img" aria-label="Token distribution chart">
+              <circle class="donut__track" cx="100" cy="100" r="70" />
+              <circle class="donut__segment donut__segment--lp" cx="100" cy="100" r="70" />
+              <circle class="donut__segment donut__segment--community" cx="100" cy="100" r="70" />
+              <text class="donut__center-label" x="100" y="94" text-anchor="middle">100%</text>
+              <text class="donut__center-sub" x="100" y="116" text-anchor="middle">FAIR</text>
+            </svg>
+          </div>
+          <ul class="legend">
+            <li><span class="swatch swatch--community"></span> Community / Circulating — <strong>100%</strong></li>
+            <li><span class="swatch swatch--lp"></span> Team wallets — <strong>0%</strong></li>
+            <li><span class="swatch swatch--none"></span> Hidden allocations — <strong>0%</strong></li>
+          </ul>
+        </div>
+
+        <div class="ca-block">
+          <p class="ca-block__label">Official Solana contract address</p>
+          <div class="ca-row">
+            <code class="ca-address" id="token-address">PASTE_TOKEN_ADDRESS_HERE</code>
+            <button type="button" class="btn btn--copy" id="copy-ca" aria-label="Copy contract address">
+              COPY
+            </button>
+          </div>
+          <p class="ca-hint" id="copy-feedback" hidden>Copied — always verify before buying.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section roadmap" id="roadmap">
+      <div class="container">
+        <p class="section__eyebrow">Mission plan</p>
+        <h2 class="section__title">Roadmap</h2>
+        <ol class="roadmap__list">
+          <li class="roadmap__item">
+            <span class="roadmap__phase">01</span>
+            <div>
+              <h3>Launch &amp; community</h3>
+              <p>Memecoin launch. Building the community from zero — no budgets, just vibes.</p>
+            </div>
+          </li>
+          <li class="roadmap__item">
+            <span class="roadmap__phase">02</span>
+            <div>
+              <h3>Raydium &amp; Dexscreener</h3>
+              <p>Listing on Raydium. Climbing trends on Dexscreener. Visibility for the frogs.</p>
+            </div>
+          </li>
+          <li class="roadmap__item roadmap__item--moon">
+            <span class="roadmap__phase">03</span>
+            <div>
+              <h3>FLIGHT TO THE MOON</h3>
+              <p>Holders unite. Chaos peaks. Destination: the moon.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="disclaimer">
+    <div class="container">
+      <h2 class="footer__title">Disclaimer</h2>
+      <p class="footer__text">
+        FOR4FUN is a memecoin created purely <strong>FOR FUN</strong>. It has no intrinsic value, no expected financial return,
+        and is not an investment product. Crypto assets are highly volatile — you can lose all of your money.
+        Do your own research. Never buy tokens from unofficial contract addresses. Nothing on this site is financial advice.
+      </p>
+      <nav class="socials" aria-label="Social links">
+        <a class="social" href="https://t.me/+8u_Zr0dhm3U5OTRh" id="social-telegram" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06 0 .16 0 .24z"/></svg>
+        </a>
+        <a class="social" href="https://x.com/FOR4FUN5465" id="social-x" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.227-8.941L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
+        </a>
+        <a class="social" href="#" id="social-dex" target="_blank" rel="noopener noreferrer" aria-label="Dexscreener">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </a>
+      </nav>
+      <p class="footer__copy">© <span id="year"></span> FOR4FUN. Made for fun.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
