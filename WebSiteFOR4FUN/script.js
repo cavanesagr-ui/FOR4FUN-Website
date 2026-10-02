@@ -29,7 +29,7 @@
 
   // Placeholders — replace when real links arrive
   const LINKS = {
-    buy: "#", // pump.fun URL
+    buy: "https://pump.fun/coin/GNRiB2oHmPB7NFXPPTFAPcmhiXNikM7GfwyEXktBpump",
     telegram: "https://t.me/+8u_Zr0dhm3U5OTRh",
     x: "https://x.com/FOR4FUN5465",
     dexscreener: "#", // Dexscreener page
